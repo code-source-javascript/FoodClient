@@ -5,6 +5,8 @@ import { IoMdRestaurant } from "react-icons/io";
 import { FaPercentage, FaHome } from "react-icons/fa";
 import { GiOpenedFoodCan } from "react-icons/gi";
 import Logo from "../Logo/logo";
+import Button from "../Button/button";
+import Profile from "../Profile/profile";
 export default function SideNav() {
   return (
     <div className="bg-white w-64  border-2 h-screen">
@@ -18,8 +20,13 @@ export default function SideNav() {
         <SideNavItem name="Promotion" icon={<FaPercentage />} />
         <SideNavItem name="Restaurants" icon={<IoMdRestaurant />} />
       </div>
-      <div>
-        
+      <div className="absolute bottom-20">
+        <div className="ml-4">
+          <Profile />
+        </div>
+        <div className="block w-56 text-right">
+          <Button name="Sign Out" />
+        </div>
       </div>
     </div>
   );

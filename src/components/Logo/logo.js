@@ -7,7 +7,7 @@ export default function Logo() {
         <MdFoodBank />
       </div>
       <div>
-        <p className="-mt-2 font-semibold font-mono">FoodApp</p>
+        <p className="-mt-2 font-semibold font-mono">Choppies</p>
       </div>
     </div>
   );
