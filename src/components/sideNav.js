@@ -1,12 +1,12 @@
 import React from "react";
-import SideNavItem from "../SideNavComponent/sideNavItem";
+import SideNavItem from "./sideNavItem";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { IoMdRestaurant } from "react-icons/io";
 import { FaPercentage, FaHome } from "react-icons/fa";
 import { GiOpenedFoodCan } from "react-icons/gi";
-import Logo from "../Logo/logo";
-import Button from "../Button/button";
-import Profile from "../Profile/profile";
+import Logo from "./logo";
+import Button from "./button";
+import Profile from "./profile";
 export default function SideNav() {
   return (
     <div className="bg-white w-64  border-2 h-screen">

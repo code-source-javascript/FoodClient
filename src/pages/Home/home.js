@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import SideNav from "../../components/Sidenav/sideNav";
+import OrderButton from "../../components/orderButton";
+import SearchBar from "../../components/searchBar";
+import SideNav from "../../components/sideNav";
 
 export default class Home extends Component {
   constructor(props) {
@@ -8,8 +10,23 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div>
-        <SideNav />
+      <div className="flex w-screen">
+        <div className="">
+          {" "}
+          <SideNav />
+        </div>
+
+        {/* search */}
+        <div className="flex justify-around w-full mx-24 my-16 h-12">
+          <SearchBar />
+          <OrderButton />
+        </div>
+        {/* category */}
+        <div></div>
+        {/* Dinner Inspiration */}
+        <div></div>
+        {/* Promotions */}
+        <div></div>
       </div>
     );
   }
