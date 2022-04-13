@@ -9,18 +9,18 @@ import Button from "./button";
 import Profile from "./profile";
 export default function SideNav() {
   return (
-    <div className="bg-white w-64  border-2 h-screen">
+    <div className="bg-white w-full  border h-screen">
       <div className="m-10">
         <Logo />
       </div>
-      <div className="mt-7 ml-5">
+      <div className="border w-full ">
         <SideNavItem name="Home" icon={<FaHome />} />
         <SideNavItem name="Inspirations" icon={<HiOutlineLightBulb />} />
         <SideNavItem name="Groceries" icon={<GiOpenedFoodCan />} />
         <SideNavItem name="Promotion" icon={<FaPercentage />} />
         <SideNavItem name="Restaurants" icon={<IoMdRestaurant />} />
       </div>
-      <div className="absolute bottom-20">
+      <div className="absolute bottom-5">
         <div className="ml-4">
           <Profile />
         </div>
