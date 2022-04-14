@@ -11,27 +11,17 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div className="flex w-screen ">
-        <div className="w-1/4">
-          {" "}
+      <div className=" relative grid md:grid-cols-5">
+        {/* nav bar  */}
+        <nav className="md:col-span-1 bg-black ">
+          {/* side nav */}
           <SideNav />
-        </div>
-        <div className="w-3/4">
-          {/* search */}
-          <div className="flex justify-around mt-16 mb-10 mr-16 h-12 ">
-            <SearchBar />
-            <OrderButton />
-          </div>
-          {/* category */}
-          <div>
-            <CategoryItem name="Dinner" icon={<MdOutlineFastfood />} />
-          </div>
-          {/* Dinner Inspiration */}
-          <div></div>
-          {/* Promotions */}
-          <div></div>
-        </div>
-        {/* <div className="w-1/4"></div> */}
+        </nav>
+        {/* content */}
+        <main className="md:col-span-4 overflow-y-scroll h-screen">
+          <div className="h-screen bg-red-500"></div>
+          <div className="h-screen bg-red-400"></div>
+        </main>
       </div>
     );
   }
