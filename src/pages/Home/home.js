@@ -11,16 +11,36 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div className=" relative grid md:grid-cols-5">
+      <div className=" relative grid sm:grid-cols-6">
         {/* nav bar  */}
-        <nav className="md:col-span-1 bg-black ">
+        <nav className="sm:col-span-1">
           {/* side nav */}
           <SideNav />
         </nav>
         {/* content */}
-        <main className="md:col-span-4 overflow-y-scroll h-screen">
-          <div className="h-screen bg-red-500"></div>
-          <div className="h-screen bg-red-400"></div>
+        <main className="sm:col-span-5 overflow-scroll overflow-y-scroll h-screen pt-10">
+          {/* search and order */}
+          <div className="grid grid-cols-8 m-auto">
+            <div className="col-span-6 lg:col-span-7 pl-10">
+              <SearchBar />
+            </div>
+            <div className=" col-span-2 lg:col-span-1 item-center pr-10">
+              <OrderButton />
+            </div>
+          </div>
+          {/* category */}
+          <div className="mt-10 px-10">
+            <div className="">
+              <span>Categories</span>
+            </div>
+            <div className="flex  overflow-scroll  p-5">
+             
+            </div>
+          </div>
+          {/* inspiration */}
+          <div className=""></div>
+          {/* promotion*/}
+          <div className=""></div>
         </main>
       </div>
     );

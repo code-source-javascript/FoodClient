@@ -9,22 +9,22 @@ import Button from "./button";
 import Profile from "./profile";
 export default function SideNav() {
   return (
-    <div className="bg-white relative h-full">
-      <div className="m-10">
+    <div className="bg-white relative h-full shadow-md">
+      <div className="py-10">
         <Logo />
       </div>
-      <div className="">
+      <div className="flex sm:block ">
         <SideNavItem name="Home" icon={<FaHome />} />
         <SideNavItem name="Inspirations" icon={<HiOutlineLightBulb />} />
         <SideNavItem name="Groceries" icon={<GiOpenedFoodCan />} />
         <SideNavItem name="Promotion" icon={<FaPercentage />} />
         <SideNavItem name="Restaurants" icon={<IoMdRestaurant />} />
       </div>
-      <div className="absolute bottom-12">
-        <div className="ml-4">
+      <div className=" w-full  sm:absolute sm:bottom-12  flex justify-between item-center sm:items-end sm:flex-col my-2 py-2">
+        <div className="sm:my-2 mx-2 sm:self-start">
           <Profile />
         </div>
-        <div className="block w-56 text-right">
+        <div className=" mx-2 ">
           <Button name="Sign Out" />
         </div>
       </div>
