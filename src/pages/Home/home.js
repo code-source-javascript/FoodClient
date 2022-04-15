@@ -1,9 +1,19 @@
 import React, { Component } from "react";
+
+// components
 import CategoryItem from "../../components/categoryItem";
+import Detail from "../../components/detail";
 import OrderButton from "../../components/orderButton";
 import SearchBar from "../../components/searchBar";
 import SideNav from "../../components/sideNav";
-import { MdOutlineFastfood } from "react-icons/md";
+import BurgerIcon from "../../icons/Burger";
+import ChickenIcon from "../../icons/chicken";
+
+// icons
+import DinnerIcon from "../../icons/Dinner";
+import DrinkIcon from "../../icons/Drink";
+import LocalIcon from "../../icons/Local";
+import PizzaIcon from "../../icons/Pizza";
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +21,7 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div className=" relative grid sm:grid-cols-6">
+      <div className="grid sm:grid-cols-6 ">
         {/* nav bar  */}
         <nav className="sm:col-span-1">
           {/* side nav */}
@@ -24,21 +34,29 @@ export default class Home extends Component {
             <div className="col-span-6 lg:col-span-7 pl-10">
               <SearchBar />
             </div>
-            <div className=" col-span-2 lg:col-span-1 item-center pr-10">
+            <div className=" col-span-2 lg:col-span-1 item-center flex justify-center items-center pr-2">
               <OrderButton />
             </div>
           </div>
           {/* category */}
           <div className="mt-10 px-10">
-            <div className="">
-              <span>Categories</span>
-            </div>
-            <div className="flex  overflow-scroll  p-5">
-             
+            <Detail name="Categories" />
+            <div className="flex  overflow-scroll overflow-x-scroll p-2 xl:justify-center">
+              <CategoryItem name="Dinner" icon={<DinnerIcon />} />
+              <CategoryItem name="Pizza" icon={<PizzaIcon />} />
+              <CategoryItem name="Locals" icon={<LocalIcon />} />
+              <CategoryItem name="Chicken" icon={<ChickenIcon />} />
+              <CategoryItem name="Burger" icon={<BurgerIcon />} />
+              <CategoryItem name="Drinks" icon={<DrinkIcon />} />
             </div>
           </div>
           {/* inspiration */}
-          <div className=""></div>
+          <div className="mt-10 px-10">
+            <Detail name="Dinner Inspirations" />
+            <div>
+              
+            </div>
+          </div>
           {/* promotion*/}
           <div className=""></div>
         </main>
