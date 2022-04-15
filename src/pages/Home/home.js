@@ -25,12 +25,12 @@ export default class Home extends Component {
     return (
       <div className="grid sm:grid-cols-6 ">
         {/* nav bar  */}
-        <nav className="sm:col-span-1">
+        <nav className="sm:col-span-2 lg:col-span-1 bg-black">
           {/* side nav */}
           <SideNav />
         </nav>
         {/* content */}
-        <main className="sm:col-span-5 overflow-scroll overflow-y-scroll h-screen pt-10">
+        <main className=" lg:col-span-5 sm:col-span-4 overflow-scroll overflow-y-scroll h-screen pt-10">
           {/* search and order */}
           <div className="grid grid-cols-8 m-auto">
             <div className="col-span-6 lg:col-span-7 pl-10 ">
@@ -55,11 +55,24 @@ export default class Home extends Component {
           <div className="mt-10 px-10 ">
             <Detail name="Dinner Inspirations" />
             <div className="  flex mt-10 overflow-x-scroll ">
-              <Inspiration />
-              <Inspiration />
-              <Inspiration />
-              <Inspiration />
-              <Inspiration />
+              <Inspiration
+                food="Spaghtetti Special"
+                image="./images/122.jpg"
+                restaurant="KTV Fast Foods"
+                price="GHS 50"
+              />
+              <Inspiration
+                food="Jollof and  Grilled Chicken"
+                image="./images/351.jpeg"
+                restaurant="Paparazzi Foods"
+                price="GHS 100"
+              />
+              <Inspiration
+                food="Yam and Stew"
+                image="./images/315.jpeg"
+                restaurant="Kojo Krom Local Foods"
+                price="GHS 35"
+              />
             </div>
           </div>
           {/* promotion*/}
