@@ -15,6 +15,7 @@ import LocalIcon from "../../icons/Local";
 import PizzaIcon from "../../icons/Pizza";
 import BurgerIcon from "../../icons/Burger";
 import ChickenIcon from "../../icons/chicken";
+import PromotionItem from "../../components/promotionItem";
 
 export default class Home extends Component {
   constructor(props) {
@@ -76,7 +77,48 @@ export default class Home extends Component {
             </div>
           </div>
           {/* promotion*/}
-          <div className=""></div>
+          <div className=" mt-10  mx-5 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            <PromotionItem
+              image="./images/122.jpg"
+              name="Everythng fine"
+              price="GHS 50"
+            />
+             <PromotionItem
+              image="./images/122.jpg"
+              name="Everythng fine"
+              price="GHS 50"
+            />
+             <PromotionItem
+              image="./images/122.jpg"
+              name="Everythng fine"
+              price="GHS 50"
+            />
+             <PromotionItem
+              image="./images/122.jpg"
+              name="Everythng fine"
+              price="GHS 50"
+            />
+             <PromotionItem
+              image="./images/122.jpg"
+              name="Everythng fine"
+              price="GHS 50"
+            />
+             <PromotionItem
+              image="./images/122.jpg"
+              name="Everythng fine"
+              price="GHS 50"
+            />
+             <PromotionItem
+              image="./images/122.jpg"
+              name="Everythng fine"
+              price="GHS 50"
+            />
+             <PromotionItem
+              image="./images/122.jpg"
+              name="Everythng fine"
+              price="GHS 50"
+            />
+          </div>
         </main>
       </div>
     );
