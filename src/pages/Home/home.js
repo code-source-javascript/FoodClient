@@ -3,17 +3,19 @@ import React, { Component } from "react";
 // components
 import CategoryItem from "../../components/categoryItem";
 import Detail from "../../components/detail";
+import Inspiration from "../../components/inspiration";
 import OrderButton from "../../components/orderButton";
 import SearchBar from "../../components/searchBar";
 import SideNav from "../../components/sideNav";
-import BurgerIcon from "../../icons/Burger";
-import ChickenIcon from "../../icons/chicken";
 
 // icons
 import DinnerIcon from "../../icons/Dinner";
 import DrinkIcon from "../../icons/Drink";
 import LocalIcon from "../../icons/Local";
 import PizzaIcon from "../../icons/Pizza";
+import BurgerIcon from "../../icons/Burger";
+import ChickenIcon from "../../icons/chicken";
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -31,7 +33,7 @@ export default class Home extends Component {
         <main className="sm:col-span-5 overflow-scroll overflow-y-scroll h-screen pt-10">
           {/* search and order */}
           <div className="grid grid-cols-8 m-auto">
-            <div className="col-span-6 lg:col-span-7 pl-10">
+            <div className="col-span-6 lg:col-span-7 pl-10 ">
               <SearchBar />
             </div>
             <div className=" col-span-2 lg:col-span-1 item-center flex justify-center items-center pr-2">
@@ -40,8 +42,7 @@ export default class Home extends Component {
           </div>
           {/* category */}
           <div className="mt-10 px-10">
-            <Detail name="Categories" />
-            <div className="flex  overflow-scroll overflow-x-scroll p-2 xl:justify-center">
+            <div className="flex  overflow-scroll overflow-x-scroll pt-2  lg:justify-center">
               <CategoryItem name="Dinner" icon={<DinnerIcon />} />
               <CategoryItem name="Pizza" icon={<PizzaIcon />} />
               <CategoryItem name="Locals" icon={<LocalIcon />} />
@@ -51,10 +52,14 @@ export default class Home extends Component {
             </div>
           </div>
           {/* inspiration */}
-          <div className="mt-10 px-10">
+          <div className="mt-10 px-10 ">
             <Detail name="Dinner Inspirations" />
-            <div>
-              
+            <div className="  flex mt-10 overflow-x-scroll ">
+              <Inspiration />
+              <Inspiration />
+              <Inspiration />
+              <Inspiration />
+              <Inspiration />
             </div>
           </div>
           {/* promotion*/}

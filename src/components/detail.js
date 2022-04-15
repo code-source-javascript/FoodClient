@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Detail(props) {
   return (
-    <div className="xl:pl-20  pl-3 mb-5 border-4">
+    <div className=" mb-5 border-b pb-2">
       <span className="text-xl font-bold">{props.name}</span>
     </div>
   );

@@ -1,13 +1,17 @@
 import React from "react";
-import { MdFoodBank } from "react-icons/md";
+import LogoIcon from "../icons/logo";
+
 export default function Logo() {
   return (
-    <div className="flex flex-col justify-center text-center ">
-      <div className="text-red-600 text-5xl  w-12 m-auto">
-        <MdFoodBank />
+    <div className="flex justify-center items-center ">
+      <div className="text-red-600 text-6xl mr-2 ">
+        <LogoIcon />
       </div>
-      <div>
-        <p className="-mt-2 font-semibold uppercase">Choppies</p>
+      <div className="text-center flex flex-col">
+        <span className="font-bold uppercase text-xl self-stretch">
+          Choppies
+        </span>
+        <span className="text-xs text-gray-500">where everyone eats</span>
       </div>
     </div>
   );
