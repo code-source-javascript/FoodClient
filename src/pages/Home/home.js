@@ -77,48 +77,54 @@ export default class Home extends Component {
             </div>
           </div>
           {/* promotion*/}
-          <div className=" mt-10  mx-5 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-            <PromotionItem
-              image="./images/122.jpg"
-              name="Everythng fine"
-              price="GHS 50"
-            />
-             <PromotionItem
-              image="./images/122.jpg"
-              name="Everythng fine"
-              price="GHS 50"
-            />
-             <PromotionItem
-              image="./images/122.jpg"
-              name="Everythng fine"
-              price="GHS 50"
-            />
-             <PromotionItem
-              image="./images/122.jpg"
-              name="Everythng fine"
-              price="GHS 50"
-            />
-             <PromotionItem
-              image="./images/122.jpg"
-              name="Everythng fine"
-              price="GHS 50"
-            />
-             <PromotionItem
-              image="./images/122.jpg"
-              name="Everythng fine"
-              price="GHS 50"
-            />
-             <PromotionItem
-              image="./images/122.jpg"
-              name="Everythng fine"
-              price="GHS 50"
-            />
-             <PromotionItem
-              image="./images/122.jpg"
-              name="Everythng fine"
-              price="GHS 50"
-            />
+          <div className="mt-10 px-10">
+            <Detail name="Promotions" />
+            <div className=" my-10  mx-5 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+              <PromotionItem
+                image="./images/122.jpg"
+                name="Everythng fine"
+                price="GHS 50"
+              />
+              <PromotionItem
+                image="./images/315.jpeg"
+                name="Everythng fine"
+                price="GHS 50"
+              />
+              <PromotionItem
+                image="./images/351.jpeg"
+                name="Everythng fine"
+                price="GHS 50"
+              />
+              <PromotionItem
+                image="./images/burger.jpeg"
+                name="Everythng fine"
+                price="GHS 50"
+              />
+              <PromotionItem
+                image="./images/kfc.jpg"
+                name="Everythng fine"
+                price="GHS 50"
+              />
+              <PromotionItem
+                image="./images/pizz.jpg"
+                name="Everythng fine"
+                price="GHS 50"
+              />
+              <PromotionItem
+                image="./images/122.jpg"
+                name="Everythng fine"
+                price="GHS 50"
+              />
+              <PromotionItem
+                image="./images/122.jpg"
+                name="Everythng fine"
+                price="GHS 50"
+              />
+            </div>
           </div>
+          <footer className="flex bg-red-400 h-36 text-white justify-center items-center border-t-8 border-red-400 ">
+            <span> &#169;copyright 2022 </span>
+          </footer>
         </main>
       </div>
     );
