@@ -5,7 +5,7 @@ export default function Inspiration(props) {
     <div>
       <div className="grid grid-cols-3 h-28 w-96 shadow m-5 ">
         <div className="col-span-1 object-cover rounded shadow overflow-hidden  ">
-          <img src={props.image} className="h-28 rounded" alt="#" />
+          <img src={props.image} className=" w-full h-28 rounded" alt="#" />
         </div>
         <div className="col-span-2  flex flex-col items-start justify-center pl-8 ">
           <div className="font-bold text-lg m-1">{props.food}</div>
