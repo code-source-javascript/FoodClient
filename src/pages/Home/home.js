@@ -13,7 +13,7 @@ export default class Home extends Component {
 
   toggleMenu() {
     if (this.state.menu === "hidden") {
-      this.setState({ menu: "" });
+      this.setState({ menu: "translate-x-0" });
     } else {
       this.setState({ menu: "hidden" });
     }
@@ -27,14 +27,9 @@ export default class Home extends Component {
             <img
               src="./images/ca-1.jpeg"
               alt="background"
-              className="h-full w-full object-cover md:hidden z-0 "
+              className="h-full w-full object-cover z-0 "
             />
-            {/* cover image for web */}
-            <img
-              src="./images/ca-1.jpeg"
-              alt="background"
-              className="h-full w-full object-cover hidden md:block z-0"
-            />
+
             {/* black transparent cover */}
             <div className="w-full h-full md:h-24 bg-black absolute z-10 top-0 opacity-70"></div>
             {/* logo */}
@@ -50,9 +45,9 @@ export default class Home extends Component {
           </div>
         </div>
         <div
-          className={`w-44 md:w-64 border fixed top-24 h-screen z-40 ${this.state.menu}`}
+          className={`w-44 md:w-64 border fixed top-0 h-screen z-40 ${this.state.menu}`}
         >
-          <SideNav />
+          <SideNav menuToggle={() => this.toggleMenu()} />
         </div>
         <div className="">
           <div className="h-96"></div>
