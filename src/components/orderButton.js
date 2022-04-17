@@ -1,14 +1,16 @@
 import React from "react";
-import { BsCart4 } from "react-icons/bs";
+import CartIcon from "../icons/Cart";
 
 export default function OrderButton() {
   return (
-    <div className="flex ">
-      <div className="rounded-full h-5 w-5 text-xs text-center p-1 relative left-14 bottom-1 bg-red-500 text-white">
-        1
-      </div>
-      <div className="rounded-full  h-12 w-12 p-3 text-2xl bg-red-200 ">
-        <BsCart4 className="" />
+    <div className="flex">
+      <div className="relative">
+        <div className="rounded-full h-4 w-4 text-xs text-center  absolute -top-1 -right-2 bottom-1 bg-red-500 text-white font-bold ">
+          1
+        </div>
+        <div className="rounded-full flex justify-center items-center h-9 w-9 bg-red-200 ">
+          <CartIcon />
+        </div>
       </div>
     </div>
   );

@@ -13,19 +13,19 @@ import GroceriesIcon from "../icons/Groceries";
 
 export default function SideNav() {
   return (
-    <div className="bg-white relative h-full shadow-md">
-      <div className="py-10">
+    <div className="">
+      <div className="">
         <Logo />
       </div>
-      <div className="flex sm:block ">
+      <div className="">
         <SideNavItem name="Home" icon={<HomeIcon />} />
         <SideNavItem name="Inspirations" icon={<InspirationIcon />} />
         <SideNavItem name="Groceries" icon={<GroceriesIcon />} />
         <SideNavItem name="Promotion" icon={<DiscountIcon />} />
         <SideNavItem name="Restaurants" icon={<RestaurantIcon />} />
       </div>
-      <div className=" w-full  sm:absolute sm:bottom-12  flex justify-between item-center sm:items-end sm:flex-col my-2 py-2 border-t">
-        <div className="sm:my-2 mx-2 sm:self-start">
+      <div className="">
+        <div className="">
           <Profile />
         </div>
         <div className=" mx-2 ">
