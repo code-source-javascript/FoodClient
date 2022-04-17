@@ -2,7 +2,7 @@ import Home from "./pages/Home/home";
 
 function App() {
   return (
-    <div className=" font-body ">
+    <div className="font-body ">
       <Home />
     </div>
   );

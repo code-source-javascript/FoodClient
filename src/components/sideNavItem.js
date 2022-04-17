@@ -2,9 +2,9 @@ import React from "react";
 import "./sideNavItem";
 export default function SideNavItem(props) {
   return (
-    <div className="flex bg-white p-3   hover:bg-red-400 hover:text-white">
-      <div className="m-1 md:m-2 text-xl">{props.icon}</div>
-      <div className="m-1 md:m-2 text-sm font-light ">{props.name}</div>
+    <div className="flex py-2 mb-10 items-center hover:bg-primary  hover:text-white rounded-r mr-3 opacity-75 transition ease-in duration-400 cursor-pointer">
+      <div className="ml-4">{props.icon}</div>
+      <div className="ml-5">{props.name}</div>
     </div>
   );
 }

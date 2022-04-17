@@ -10,28 +10,19 @@ import InspirationIcon from "../icons/Inspiration";
 import DiscountIcon from "../icons/Discount";
 import HomeIcon from "../icons/Home";
 import GroceriesIcon from "../icons/Groceries";
+import CloseIcon from "../icons/Close";
 
-export default function SideNav() {
+export default function SideNav(props) {
   return (
-    <div className="bg-white relative h-full shadow-md">
-      <div className="py-10">
-        <Logo />
+    <div className="bg-white h-full pt-5 relative">
+      <div className="flex justify-end p-5 ">
+        <CloseIcon onClick={props.menuToggle} />
       </div>
-      <div className="flex sm:block ">
-        <SideNavItem name="Home" icon={<HomeIcon />} />
-        <SideNavItem name="Inspirations" icon={<InspirationIcon />} />
-        <SideNavItem name="Groceries" icon={<GroceriesIcon />} />
-        <SideNavItem name="Promotion" icon={<DiscountIcon />} />
-        <SideNavItem name="Restaurants" icon={<RestaurantIcon />} />
-      </div>
-      <div className=" w-full  sm:absolute sm:bottom-12  flex justify-between item-center sm:items-end sm:flex-col my-2 py-2 border-t">
-        <div className="sm:my-2 mx-2 sm:self-start">
-          <Profile />
-        </div>
-        <div className=" mx-2 ">
-          <Button name="Sign Out" />
-        </div>
-      </div>
+      <SideNavItem name="Home" icon={<HomeIcon />} />
+      <SideNavItem name="Inspirations" icon={<InspirationIcon />} />
+      <SideNavItem name="Groceries" icon={<GroceriesIcon />} />
+      <SideNavItem name="Promotion" icon={<DiscountIcon />} />
+      <SideNavItem name="Restaurants" icon={<RestaurantIcon />} />
     </div>
   );
 }

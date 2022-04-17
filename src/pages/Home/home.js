@@ -1,131 +1,63 @@
 import React, { Component } from "react";
-
-// components
-import CategoryItem from "../../components/categoryItem";
-import Detail from "../../components/detail";
-import Inspiration from "../../components/inspiration";
-import OrderButton from "../../components/orderButton";
-import SearchBar from "../../components/searchBar";
+import Logo from "../../components/logo";
+import Profile from "../../components/profile";
 import SideNav from "../../components/sideNav";
-
-// icons
-import DinnerIcon from "../../icons/Dinner";
-import DrinkIcon from "../../icons/Drink";
-import LocalIcon from "../../icons/Local";
-import PizzaIcon from "../../icons/Pizza";
-import BurgerIcon from "../../icons/Burger";
-import ChickenIcon from "../../icons/chicken";
-import PromotionItem from "../../components/promotionItem";
+import MenuIcon from "../../icons/Menu";
 
 export default class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { menu: "hidden" };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu() {
+    if (this.state.menu === "hidden") {
+      this.setState({ menu: "translate-x-0" });
+    } else {
+      this.setState({ menu: "hidden" });
+    }
   }
   render() {
     return (
-      <div className="grid sm:grid-cols-6 ">
-        {/* nav bar  */}
-        <nav className="sm:col-span-2 lg:col-span-1 bg-black">
-          {/* side nav */}
-          <SideNav />
-        </nav>
-        {/* content */}
-        <main className=" lg:col-span-5 sm:col-span-4 overflow-scroll overflow-y-scroll h-screen pt-10">
-          {/* search and order */}
-          <div className="grid grid-cols-8 m-auto">
-            <div className="col-span-6 lg:col-span-7 pl-10 ">
-              <SearchBar />
-            </div>
-            <div className=" col-span-2 lg:col-span-1 item-center flex justify-center items-center pr-2">
-              <OrderButton />
-            </div>
-          </div>
-          {/* category */}
-          <div className="mt-10 px-10">
-            <div className="flex  overflow-scroll overflow-x-scroll pt-2  lg:justify-center">
-              <CategoryItem name="Dinner" icon={<DinnerIcon />} />
-              <CategoryItem name="Pizza" icon={<PizzaIcon />} />
-              <CategoryItem name="Locals" icon={<LocalIcon />} />
-              <CategoryItem name="Chicken" icon={<ChickenIcon />} />
-              <CategoryItem name="Burger" icon={<BurgerIcon />} />
-              <CategoryItem name="Drinks" icon={<DrinkIcon />} />
+      <div className="h-screen w-screen bg-gray-100  ">
+        <div className="md:fixed">
+          <div className=" h-screen w-screen md:h-24 relative transform transition ease-out duration-500">
+            {/* cover image for phones */}
+            <img
+              src="./images/ca-1.jpeg"
+              alt="background"
+              className="h-full w-full object-cover z-0 "
+            />
+
+            {/* black transparent cover */}
+            <div className="w-full h-full md:h-24 bg-black absolute z-10 top-0 opacity-70"></div>
+            {/* logo */}
+            <div className=" flex absolute top-0 z-20 justify-center items-center w-full h-full">
+              <Logo />
             </div>
           </div>
-          {/* inspiration */}
-          <div className="mt-10 px-10 ">
-            <Detail name="Dinner Inspirations" />
-            <div className="  flex mt-10 overflow-x-scroll ">
-              <Inspiration
-                food="Spaghtetti Special"
-                image="./images/122.jpg"
-                restaurant="KTV Fast Foods"
-                price="GHS 50"
-              />
-              <Inspiration
-                food="Jollof and  Grilled Chicken"
-                image="./images/351.jpeg"
-                restaurant="Paparazzi Foods"
-                price="GHS 100"
-              />
-              <Inspiration
-                food="Yam and Stew"
-                image="./images/315.jpeg"
-                restaurant="Kojo Krom Local Foods"
-                price="GHS 35"
-              />
-            </div>
+          <div className="fixed top-7 left-8 z-30 ">
+            <MenuIcon onClick={() => this.toggleMenu()} />
           </div>
-          {/* promotion*/}
-          <div className="mt-10 px-10">
-            <Detail name="Promotions" />
-            <div className=" my-10  mx-5 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-              <PromotionItem
-                image="./images/122.jpg"
-                name="Everythng fine"
-                price="GHS 50"
-              />
-              <PromotionItem
-                image="./images/315.jpeg"
-                name="Everythng fine"
-                price="GHS 50"
-              />
-              <PromotionItem
-                image="./images/351.jpeg"
-                name="Everythng fine"
-                price="GHS 50"
-              />
-              <PromotionItem
-                image="./images/burger.jpeg"
-                name="Everythng fine"
-                price="GHS 50"
-              />
-              <PromotionItem
-                image="./images/kfc.jpg"
-                name="Everythng fine"
-                price="GHS 50"
-              />
-              <PromotionItem
-                image="./images/pizz.jpg"
-                name="Everythng fine"
-                price="GHS 50"
-              />
-              <PromotionItem
-                image="./images/122.jpg"
-                name="Everythng fine"
-                price="GHS 50"
-              />
-              <PromotionItem
-                image="./images/122.jpg"
-                name="Everythng fine"
-                price="GHS 50"
-              />
-            </div>
+          <div className="fixed top-7 right-8 z-30 ">
+            <Profile />
           </div>
-          <footer className="flex bg-red-400 h-36 text-white justify-center items-center border-t-8 border-red-400 ">
-            <span> &#169;copyright 2022 </span>
-          </footer>
-        </main>
+        </div>
+        <div
+          className={`w-44 md:w-64 border fixed top-0 h-screen z-40 ${this.state.menu}`}
+        >
+          <SideNav menuToggle={() => this.toggleMenu()} />
+        </div>
+        <div className="">
+          <div className="h-96"></div>
+          <div className="h-96"></div>
+          <div className="h-96"></div>
+          <div className="h-96"></div>
+          <div className="h-96"></div>
+          <div className="h-96"></div>
+          <div className="h-96"></div>
+        </div>
       </div>
     );
   }
