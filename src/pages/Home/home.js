@@ -1,13 +1,22 @@
 import React, { Component } from "react";
 import Logo from "../../components/logo";
 import Profile from "../../components/profile";
-import LogoIcon from "../../icons/logo";
+import SideNav from "../../components/sideNav";
 import MenuIcon from "../../icons/Menu";
 
 export default class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { menu: "hidden" };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu() {
+    if (this.state.menu === "hidden") {
+      this.setState({ menu: "" });
+    } else {
+      this.setState({ menu: "hidden" });
+    }
   }
   render() {
     return (
@@ -27,20 +36,25 @@ export default class Home extends Component {
               className="h-full w-full object-cover hidden md:block z-0"
             />
             {/* black transparent cover */}
-            <div className="w-full h-full md:h-24 bg-black absolute z-30 top-0 opacity-70"></div>
+            <div className="w-full h-full md:h-24 bg-black absolute z-10 top-0 opacity-70"></div>
             {/* logo */}
-            <div className=" flex absolute top-0 z-40 justify-center items-center w-full h-full">
+            <div className=" flex absolute top-0 z-20 justify-center items-center w-full h-full">
               <Logo />
             </div>
           </div>
-          <div className="fixed top-7 left-8 z-50 ">
-            <MenuIcon />
+          <div className="fixed top-7 left-8 z-30 ">
+            <MenuIcon onClick={() => this.toggleMenu()} />
           </div>
-          <div className="fixed top-7 right-8 z-50 ">
+          <div className="fixed top-7 right-8 z-30 ">
             <Profile />
           </div>
         </div>
-        <div className=" flex flex-col  ">
+        <div
+          className={`w-44 md:w-64 border fixed top-24 h-screen z-40 ${this.state.menu}`}
+        >
+          <SideNav />
+        </div>
+        <div className="">
           <div className="h-96"></div>
           <div className="h-96"></div>
           <div className="h-96"></div>

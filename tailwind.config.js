@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         body: "Nanum Myeongjo ",
       },
+      colors: {
+        primary: "#ff8f00",
+      },
     },
   },
   variants: {
