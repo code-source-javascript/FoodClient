@@ -1,21 +1,6 @@
 import React, { Component } from "react";
-
-// components
-import CategoryItem from "../../components/categoryItem";
-import Detail from "../../components/detail";
-import Inspiration from "../../components/inspiration";
-import OrderButton from "../../components/orderButton";
-import SearchBar from "../../components/searchBar";
-import SideNav from "../../components/sideNav";
-
-// icons
-import DinnerIcon from "../../icons/Dinner";
-import DrinkIcon from "../../icons/Drink";
-import LocalIcon from "../../icons/Local";
-import PizzaIcon from "../../icons/Pizza";
-import BurgerIcon from "../../icons/Burger";
-import ChickenIcon from "../../icons/chicken";
-import PromotionItem from "../../components/promotionItem";
+import Logo from "../../components/logo";
+import LogoIcon from "../../icons/logo";
 
 export default class Home extends Component {
   constructor(props) {
@@ -23,6 +8,35 @@ export default class Home extends Component {
     this.state = {};
   }
   render() {
-    return <div></div>;
+    return (
+      <div>
+        {/* top */}
+        <div className="h-screen w-screen bg-gray-100 ">
+          <div className=" h-screen w-screen md:h-24 relative ">
+            {/* cover image for phones */}
+            <img
+              src="./images/ca-1.jpeg"
+              alt="background"
+              className="h-full w-full object-cover md:hidden z-0 "
+            />
+            {/* cover image for web */}
+            <img
+              src="./images/ca-1.jpeg"
+              alt="background"
+              className="h-full w-full object-cover hidden md:block z-0"
+            />
+            {/* black transparent cover */}
+            <div className="w-full h-full md:h-24 bg-black absolute z-30 top-0 opacity-70"></div>
+            {/* logo */}
+            <div className=" flex absolute top-0 z-40 justify-center items-center w-full h-full">
+              <Logo />
+            </div>
+            <div className="absolute top-7 left-4">hie</div>
+          </div>
+        </div>
+        {/* main */}
+        <div className=""></div>
+      </div>
+    );
   }
 }

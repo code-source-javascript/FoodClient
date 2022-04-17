@@ -3,13 +3,13 @@ import LogoIcon from "../icons/logo";
 
 export default function Logo() {
   return (
-    <div className=" ">
+    <div className="flex flex-col justify-center items-center">
       <div className="">
-        <LogoIcon />
+        <LogoIcon color="#ff8f00" />
       </div>
-      <div className="">
-        <span className="">Choppies</span>
-        <span className="">where everyone eats</span>
+      <div className="md:hidden flex flex-col justify-center items-center">
+        <div className="text-white font-extrabold text-6xl">Choppies</div>
+        <div className=" text-gray-200">where everyone eats</div>
       </div>
     </div>
   );
