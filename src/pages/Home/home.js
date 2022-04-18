@@ -57,9 +57,10 @@ export default class Home extends Component {
           <div className="flex justify-center">
             <SearchBar />
           </div>
-          <div className="h-96 bg-red-900"></div>
-          <div className="h-96 bg-blue-700"></div>
-          <div className="h-96 bg-indigo-900"></div>
+          <div className="h-96 bg-red-900">Cateogories</div>
+          <div className="h-96 bg-blue-700">Inspirations</div>
+          <div className="h-96 bg-indigo-900">Promotions</div>
+          <div>Footer</div>
         </div>
       </div>
     );
