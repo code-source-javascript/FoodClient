@@ -3,7 +3,7 @@ import React from "react";
 function MenuIcon(props) {
   return (
     <div
-      className="flex justify-center items-center border-2 border-gray-500 bg-white h-10 w-10 rounded-md  hover:bg-gray-500 cursor-pointer"
+      className="flex justify-center items-center border-2 border-gray-500 bg-white h-10 w-10 rounded-md  hover:bg-primary cursor-pointer"
       onClick={props.onClick}
     >
       <svg
