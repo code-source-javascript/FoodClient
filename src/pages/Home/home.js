@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Inspiration from "../../components/inspiration";
 import Logo from "../../components/logo";
 import Profile from "../../components/profile";
 import SearchBar from "../../components/searchBar";
@@ -58,7 +59,14 @@ export default class Home extends Component {
             <SearchBar />
           </div>
           <div className="h-96 bg-red-900">Cateogories</div>
-          <div className="h-96 bg-blue-700">Inspirations</div>
+          <div className="h-96 bg-blue-700">
+            <Inspiration
+              image="./images/kfc.jpg"
+              food="Street Wise 2"
+              restaurant="Kentucky Fried Chiken"
+              price="GHS 30"
+            />
+          </div>
           <div className="h-96 bg-indigo-900">Promotions</div>
           <div>Footer</div>
         </div>
