@@ -16,7 +16,7 @@ export default function Inspiration(props) {
           <div className=" font-bold text-xs text-gray-500">
             {props.restaurant}
           </div>
-          <div className=" text-sm font-bold">{props.price}</div>
+          <div className="py-2 text-sm font-bold">{props.price}</div>
         </div>
       </div>
     </div>
