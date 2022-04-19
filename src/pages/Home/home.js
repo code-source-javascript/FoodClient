@@ -59,7 +59,25 @@ export default class Home extends Component {
             <SearchBar />
           </div>
           <div className="h-96 bg-red-900 z-60">Cateogories</div>
-          <div className="h-96 bg-blue-700 z-60 flex overflow-x-scroll">
+          <div className=" z-60 flex overflow-x-scroll">
+            <Inspiration
+              image="./images/kfc.jpg"
+              food="Street Wise 2"
+              restaurant="Kentucky Fried Chiken"
+              price="GHS 30"
+            />
+            <Inspiration
+              image="./images/122.jpg"
+              food="Street Wise 2"
+              restaurant="Kentucky Fried Chiken"
+              price="GHS 30"
+            />
+            <Inspiration
+              image="./images/315.jpeg"
+              food="Street Wise 2"
+              restaurant="Kentucky Fried Chiken"
+              price="GHS 30"
+            />
             <Inspiration
               image="./images/kfc.jpg"
               food="Street Wise 2"
