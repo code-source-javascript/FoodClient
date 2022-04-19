@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Inspiration from "../../components/inspiration";
 import Logo from "../../components/logo";
 import Profile from "../../components/profile";
+import PromotionItem from "../../components/promotionItem";
 import SearchBar from "../../components/searchBar";
 import SideNav from "../../components/sideNav";
 import MenuIcon from "../../icons/Menu";
@@ -58,8 +59,8 @@ export default class Home extends Component {
           <div className="flex justify-center">
             <SearchBar />
           </div>
-          <div className="h-96 bg-red-900 z-60">Cateogories</div>
-          <div className=" z-60 flex overflow-x-scroll">
+          {/* <div className="h-96 bg-red-900 z-60">Cateogories</div> */}
+          <div className="md:mx-20 z-60 flex overflow-x-scroll">
             <Inspiration
               image="./images/kfc.jpg"
               food="Street Wise 2"
@@ -96,8 +97,34 @@ export default class Home extends Component {
               restaurant="Kentucky Fried Chiken"
               price="GHS 30"
             />
+            <Inspiration
+              image="./images/kfc.jpg"
+              food="Street Wise 2"
+              restaurant="Kentucky Fried Chiken"
+              price="GHS 30"
+            />
+            <Inspiration
+              image="./images/kfc.jpg"
+              food="Street Wise 2"
+              restaurant="Kentucky Fried Chiken"
+              price="GHS 30"
+            />
+            <Inspiration
+              image="./images/kfc.jpg"
+              food="Street Wise 2"
+              restaurant="Kentucky Fried Chiken"
+              price="GHS 30"
+            />
           </div>
-          <div className="h-96 bg-indigo-900">Promotions</div>
+          {/* promotions */}
+          <div className="mt-5 md:mt-10">
+            <PromotionItem
+              image="./images/pizz.jpg"
+              imageAlt="food"
+              name="Meat Lovers Pizza"
+              price="GHs 70"
+            />
+          </div>
           <div>Footer</div>
         </div>
       </div>

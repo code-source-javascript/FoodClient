@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Inspiration(props) {
   return (
-    <div className="my-5 mx-2 rounded shadow-md h-24  w-96 overflow-hidden">
+    <div className="my-5 mx-2 rounded shadow-md h-24  w-96 ">
       <div className=" flex bg-white w-96 rounded h-full">
         <div className="w-1/4 ">
           <img
