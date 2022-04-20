@@ -2,13 +2,13 @@ import React from "react";
 
 export default function PromotionItem(props) {
   return (
-    <div className="border">
+    <div className="border-2 flex justify-center">
       <div className="">
         <div className="">
           <img
             src={props.image}
             alt={props.imageAlt}
-            className="w-80 h-80 object-cover"
+            className="w-80 h-80 object-cover rounded-lg"
           />
         </div>
         <h3 className="">{props.name}</h3>
