@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PromotionItem(props) {
   return (
-    <div className="border-2 flex justify-center">
+    <div className="flex justify-center">
       <div className="">
         <div className="">
           <img
