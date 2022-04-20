@@ -117,7 +117,37 @@ export default class Home extends Component {
             />
           </div>
           {/* promotions */}
-          <div className="mt-5 md:mt-10">
+          <div className="mt-5 md:mt-10 grid md:grid-cols-3 gap-3">
+            <PromotionItem
+              image="./images/pizz.jpg"
+              imageAlt="food"
+              name="Meat Lovers Pizza"
+              price="GHs 70"
+            />
+            <PromotionItem
+              image="./images/pizz.jpg"
+              imageAlt="food"
+              name="Meat Lovers Pizza"
+              price="GHs 70"
+            />
+            <PromotionItem
+              image="./images/pizz.jpg"
+              imageAlt="food"
+              name="Meat Lovers Pizza"
+              price="GHs 70"
+            />{" "}
+            <PromotionItem
+              image="./images/pizz.jpg"
+              imageAlt="food"
+              name="Meat Lovers Pizza"
+              price="GHs 70"
+            />
+            <PromotionItem
+              image="./images/pizz.jpg"
+              imageAlt="food"
+              name="Meat Lovers Pizza"
+              price="GHs 70"
+            />
             <PromotionItem
               image="./images/pizz.jpg"
               imageAlt="food"
