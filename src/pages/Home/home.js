@@ -120,36 +120,42 @@ export default class Home extends Component {
           <div className="mt-5 md:mt-10 grid  lg:grid-cols-3 md:grid-cols-2  gap-3">
             <PromotionItem
               image="./images/pizz.jpg"
+              restaurant="KFC Foods"
               imageAlt="food"
               name="Meat Lovers Pizza"
               price="GHs 70"
             />
             <PromotionItem
               image="./images/pizz.jpg"
+              restaurant="KFC Foods"
               imageAlt="food"
               name="Meat Lovers Pizza"
               price="GHs 70"
             />
             <PromotionItem
               image="./images/pizz.jpg"
+              restaurant="KFC Foods"
               imageAlt="food"
               name="Meat Lovers Pizza"
               price="GHs 70"
             />{" "}
             <PromotionItem
               image="./images/pizz.jpg"
+              restaurant="KFC Foods"
               imageAlt="food"
               name="Meat Lovers Pizza"
               price="GHs 70"
             />
             <PromotionItem
               image="./images/pizz.jpg"
+              restaurant="KFC Foods"
               imageAlt="food"
               name="Meat Lovers Pizza"
               price="GHs 70"
             />
             <PromotionItem
               image="./images/pizz.jpg"
+              restaurant="KFC Foods"
               imageAlt="food"
               name="Meat Lovers Pizza"
               price="GHs 70"
