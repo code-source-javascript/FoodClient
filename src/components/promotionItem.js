@@ -11,7 +11,7 @@ export default function PromotionItem(props) {
             className="w-80 h-80 object-cover rounded-lg"
           />
         </div>
-        <h3 className="">{props.name}</h3>
+        <h3 className="font-bold text-lg ">{props.name}</h3>
         <p className="">{props.price}</p>
         <div className="">23%</div>
       </div>
