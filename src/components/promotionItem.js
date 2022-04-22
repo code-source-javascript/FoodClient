@@ -2,8 +2,8 @@ import React from "react";
 
 export default function PromotionItem(props) {
   return (
-    <div className="flex justify-center">
-      <div className="">
+    <div className="flex justify-center ">
+      <div className="relative">
         <div className="">
           <img
             src={props.image}
@@ -11,9 +11,11 @@ export default function PromotionItem(props) {
             className="w-80 h-80 object-cover rounded-lg"
           />
         </div>
-        <h3 className="font-bold text-lg ">{props.name}</h3>
-        <p className="">{props.price}</p>
-        <div className="">23%</div>
+        <h3 className="font-bold text-lg text-gray-600">{props.name}</h3>
+        <p className="font-light ">{props.price}</p>
+        <div className="absolute top-5 right-5 bg-orange-700 text-gray-100">
+          23%
+        </div>
       </div>
     </div>
   );
