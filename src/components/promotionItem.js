@@ -12,6 +12,7 @@ export default function PromotionItem(props) {
           />
         </div>
         <h3 className="font-bold text-lg text-gray-600">{props.name}</h3>
+        <h3 className="text-gray-400 font-body text-sm">{props.restaurant}</h3>
         <p className="font-light ">{props.price}</p>
         <div className="absolute top-5 right-0 bg-orange-400 text-gray-100 w-14 h-7 text-center font-extrabold p-1  rounded-tl rounded-bl">
           23%
