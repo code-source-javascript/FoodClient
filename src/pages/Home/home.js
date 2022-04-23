@@ -125,41 +125,6 @@ export default class Home extends Component {
               name="Meat Lovers Pizza"
               price="GHs 70"
             />
-            <PromotionItem
-              image="./images/pizz.jpg"
-              restaurant="KFC Foods"
-              imageAlt="food"
-              name="Meat Lovers Pizza"
-              price="GHs 70"
-            />
-            <PromotionItem
-              image="./images/pizz.jpg"
-              restaurant="KFC Foods"
-              imageAlt="food"
-              name="Meat Lovers Pizza"
-              price="GHs 70"
-            />{" "}
-            <PromotionItem
-              image="./images/pizz.jpg"
-              restaurant="KFC Foods"
-              imageAlt="food"
-              name="Meat Lovers Pizza"
-              price="GHs 70"
-            />
-            <PromotionItem
-              image="./images/pizz.jpg"
-              restaurant="KFC Foods"
-              imageAlt="food"
-              name="Meat Lovers Pizza"
-              price="GHs 70"
-            />
-            <PromotionItem
-              image="./images/pizz.jpg"
-              restaurant="KFC Foods"
-              imageAlt="food"
-              name="Meat Lovers Pizza"
-              price="GHs 70"
-            />
           </div>
           <div>Footer</div>
         </div>
