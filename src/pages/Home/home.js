@@ -67,54 +67,6 @@ export default class Home extends Component {
               restaurant="Kentucky Fried Chiken"
               price="GHS 30"
             />
-            <Inspiration
-              image="./images/122.jpg"
-              food="Street Wise 2"
-              restaurant="Kentucky Fried Chiken"
-              price="GHS 30"
-            />
-            <Inspiration
-              image="./images/315.jpeg"
-              food="Street Wise 2"
-              restaurant="Kentucky Fried Chiken"
-              price="GHS 30"
-            />
-            <Inspiration
-              image="./images/kfc.jpg"
-              food="Street Wise 2"
-              restaurant="Kentucky Fried Chiken"
-              price="GHS 30"
-            />
-            <Inspiration
-              image="./images/kfc.jpg"
-              food="Street Wise 2"
-              restaurant="Kentucky Fried Chiken"
-              price="GHS 30"
-            />
-            <Inspiration
-              image="./images/kfc.jpg"
-              food="Street Wise 2"
-              restaurant="Kentucky Fried Chiken"
-              price="GHS 30"
-            />
-            <Inspiration
-              image="./images/kfc.jpg"
-              food="Street Wise 2"
-              restaurant="Kentucky Fried Chiken"
-              price="GHS 30"
-            />
-            <Inspiration
-              image="./images/kfc.jpg"
-              food="Street Wise 2"
-              restaurant="Kentucky Fried Chiken"
-              price="GHS 30"
-            />
-            <Inspiration
-              image="./images/kfc.jpg"
-              food="Street Wise 2"
-              restaurant="Kentucky Fried Chiken"
-              price="GHS 30"
-            />
           </div>
           {/* promotions */}
           <div className="mt-5 md:mt-10 grid  lg:grid-cols-3 md:grid-cols-2  gap-3">
